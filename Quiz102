@@ -1,0 +1,19 @@
+# Thais Lizeth Santos Acosta
+# A01630056
+# Quiz 10 Question 2
+
+def dotProduct(x,y):
+    if (len(x)== len(y)):
+        a = sum(p*q for p,q in zip(x, y))
+        return a
+    else:
+        return ("Error")
+
+a = [2,4,5,6]
+b = [1,2,3,4]
+f = [3,4,5]
+g = [5,6,7,4]
+
+print()
+print("Si las listas tienen la misma longitud:", dotProduct(a,b))
+print("Si las listas no tienen la misma longitud:", dotProduct(f,g))
